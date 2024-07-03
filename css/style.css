@@ -75,7 +75,7 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-reg);
 }
 .section__title--intro strong {
-    display: block;
+    display: flex;
 }
 
 .section__subtitle {
@@ -83,6 +83,7 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
+{
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
@@ -90,7 +91,7 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
-
+}
 
 /* header */
 
