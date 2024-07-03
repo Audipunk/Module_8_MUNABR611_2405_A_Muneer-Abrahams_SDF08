@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Custom Properties, update these for your own design */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -34,6 +35,8 @@
     }
 }
 
+/* General styles */
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -51,21 +54,22 @@ img {
     display: block;
     max-width: 100%;
 }
-strong { font-weight: var(--fw-bold) }
 
+strong { font-weight: var(--fw-bold) }
 
 /* Typography */
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
 
 .section__title {
     margin-bottom: .25em;
@@ -74,8 +78,9 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
 }
+
 .section__title--intro strong {
-    display: inline-block;
+    display: block;
 }
 
 .section__subtitle {
@@ -83,14 +88,12 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 10em;
-    display: block;
+    margin-bottom: 1em;
 }
 
 
@@ -124,7 +127,7 @@ nav { display: none; }
         grid-area: img;
         min-width: 250px;
         position: relative;
-        z-index: auto;
+        z-index: 2;
     }    
     
     .section__subtitle--intro {
@@ -135,7 +138,6 @@ nav { display: none; }
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
-        
     }
 }
 
