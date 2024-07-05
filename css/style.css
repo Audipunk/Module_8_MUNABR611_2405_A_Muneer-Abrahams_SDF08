@@ -124,18 +124,20 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 2em;
 }
 
+
+
+/* header */
 header {
-    display: flex;
+    display: flex-end;
     justify-content: space-between;
     padding: 1em;
 }
 
-
 .logo {
     max-width: 100px;
-}/* header */
+}
 
-nav {
+.nav {
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -144,8 +146,8 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
-
-    transform: translateX(0%);
+    
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -178,10 +180,6 @@ nav {
 }
 
 .hamburger {
-    background: var(--clr-dark);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
     display: block;
     position: relative;
 }
@@ -208,6 +206,8 @@ nav {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
+
+/*  Intro section  */
 
 .intro {
     position: relative;
